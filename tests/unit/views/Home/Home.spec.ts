@@ -8,5 +8,7 @@ describe('Home Component', () => {
         wrapper = mount(Home);
     });
 
-    test('', () => {});
+    test('Verify Snapshot', () => {
+        expect(wrapper).toMatchSnapshot();
+    });
 });

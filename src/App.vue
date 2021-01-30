@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <div>Ah! shit here you go!</div>
+        <router-view />
     </v-app>
 </template>
 

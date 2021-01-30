@@ -1,4 +1,5 @@
 module.exports = {
+    transpileDependencies: ['vuetify'],
     chainWebpack: config => {
         config.resolve.extensions
             .clear()
@@ -10,7 +11,5 @@ module.exports = {
             .add('.jsx')
             .add('.json')
             .add('.wasm');
-    },
-
-    transpileDependencies: ['vuetify']
+    }
 };
