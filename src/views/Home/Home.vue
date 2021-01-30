@@ -2,4 +2,4 @@
     <div>This is home</div>
 </template>
 
-<script lang="ts" src="./home.component.ts" />
+<script lang="ts" src="./Home.ts" />

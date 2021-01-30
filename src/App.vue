@@ -4,4 +4,4 @@
     </v-app>
 </template>
 
-<script lang="ts" src="./app.component.ts" />
+<script lang="ts" src="./App.ts" />

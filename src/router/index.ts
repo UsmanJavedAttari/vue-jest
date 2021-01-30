@@ -1,4 +1,4 @@
-import HomeComponent from '@/views/home/home.component';
+import Home from '@/views/Home/Home';
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 
@@ -8,7 +8,7 @@ const routes: Array<RouteConfig> = [
     {
         path: '/',
         name: 'Home',
-        component: HomeComponent
+        component: Home
     }
 ];
 

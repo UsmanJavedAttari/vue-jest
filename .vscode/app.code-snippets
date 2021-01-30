@@ -1,0 +1,49 @@
+{
+    "Vue Typescript Component Snippet": {
+        "scope": "javascript,typescript",
+        "prefix": "vc",
+        "body": [
+            "import BaseVue from '@/components/core/base-vue';",
+            "import { Component } from 'vue-property-decorator';\n",
+            "@Component",
+            "export default class ${1:Name} extends BaseVue {}"
+        ],
+        "description": "Makes vue typescript component."
+    },
+    "Vue HTML Component Snippet": {
+        "scope": "vue",
+        "prefix": "vc",
+        "body": [
+            "<template>",
+            "\t<div>${1}</div>",
+            "</template>\n",
+            "<script lang=\"ts\" src=\"./${TM_FILENAME_BASE}.ts\" />\n"
+        ],
+        "description": "Makes vue HTML component."
+    },
+    "Service Snippet": {
+        "scope": "javascript,typescript",
+        "prefix": "srv",
+        "body": [
+            "import { ServiceClass } from '@/decorators';\n",
+            "@ServiceClass()",
+            "export class ${1:Name}Service {}"
+        ],
+        "description": "Makes service class."
+    },
+    "Test Describe Snippet": {
+        "scope": "javascript,typescript",
+        "prefix": "des",
+        "body": [
+            "import { mount, Wrapper } from '@vue/test-utils';\n",
+            "describe('${1:Name} Component', () => {",
+            "\tlet wrapper: Wrapper<${1:Name}>;\n",
+            "\tbeforeEach(() => {",
+            "\t\twrapper = mount(${1:Name});",
+            "\t});\n",
+            "\ttest('', () => {});",
+            "});\n"
+        ],
+        "description": "Makes service class."
+    }
+}

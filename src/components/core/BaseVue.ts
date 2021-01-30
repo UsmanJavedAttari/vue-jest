@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { Subscription } from 'rxjs';
 
-export default abstract class VueWrapper extends Vue {
+export default abstract class BaseVue extends Vue {
     private Subscriptions: Array<Subscription> = [];
 
     set AddSubscription$(subscription: Subscription) {
