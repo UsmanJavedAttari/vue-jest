@@ -3,10 +3,10 @@
         "scope": "javascript,typescript",
         "prefix": "vc",
         "body": [
-            "import BaseVue from '@/components/core/base-vue';",
+            "import BaseVue from '@/components/core/BaseVue';",
             "import { Component } from 'vue-property-decorator';\n",
             "@Component",
-            "export default class ${1:Name} extends BaseVue {}"
+            "export default class ${1:Name} extends BaseVue {}\n"
         ],
         "description": "Makes vue typescript component."
     },
@@ -33,7 +33,7 @@
     },
     "Test Describe Snippet": {
         "scope": "javascript,typescript",
-        "prefix": "des",
+        "prefix": "tst",
         "body": [
             "import { mount, Wrapper } from '@vue/test-utils';\n",
             "describe('${1:Name} Component', () => {",
@@ -44,6 +44,12 @@
             "\ttest('', () => {});",
             "});\n"
         ],
+        "description": "Makes service class."
+    },
+    "Test function": {
+        "scope": "javascript,typescript",
+        "prefix": "test",
+        "body": ["test('${1}', () => {});"],
         "description": "Makes service class."
     }
 }

@@ -8,7 +8,14 @@ describe('Home Component', () => {
         wrapper = mount(Home);
     });
 
-    test('Verify Snapshot', () => {
-        expect(wrapper).toMatchSnapshot();
+    test('Renders 0 on start', () => {
+        expect(wrapper.find('.count').text()).toBe('0');
+    });
+
+    test('Increment by 1', async () => {
+        const button = wrapper.find('button');
+        await button.trigger('click');
+
+        expect(wrapper.find('.count').text()).toBe('1');
     });
 });
